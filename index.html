@@ -14,13 +14,40 @@
   </head>
   <body>
     <!-- Encapçalats (header) -->
-    <header></header>
+    <header>
+      <!-- Encapçalat H1,...) -->
+      <h1>Compendi HTML</h1>
+      <nav>
+        <ul>
+          <li>
+            <!-- Un enllaç a una pagina -->
+            <a href="https://www.w3schools.com" target="_blank"
+              >W3Schools.com</a
+            >
+          </li>
+          <li>
+            <!-- Un enllaç a una ancora del propi document -->
+            <a href="#article2">Ves a l'article 2</a>
+          </li>
+          <li>
+            <!-- Un enllaç que descarrega un document en format pdf -->
+            <a href="./instruccions.pdf" download="instruccions"
+              >Descàrrega instruccions en pdf</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
     <!-- i un cos-->
     <main>
       <!-- Seccions de document -->
+      <!-- Seccio articles -->
       <section>
         <!-- Articles -->
         <article>
+          <header>
+            <h2>Article 1</h2>
+          </header>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Accusantium molestiae atque id amet veniam magnam accusamus ipsum
@@ -39,10 +66,23 @@
             adipisci repellendus, quaerat illo ipsum exercitationem veniam non
             deserunt nostrum tempora explicabo. Quia, eveniet nesciunt. Unde
             rerum minima porro, iure fugit dolorum dolores cum odit officia?
-            Temporibus delectus itaque, ad non sit eius.
+            Temporibus delectus itaque, ad non sit eius. Repellat quisquam
+            praesentium labore adipisci repellendus, quaerat illo ipsum
+            exercitationem veniam non deserunt nostrum tempora explicabo. Quia,
+            eveniet nesciunt. Unde rerum minima porro, iure fugit dolorum
+            dolores cum odit officia? Temporibus delectus itaque, ad non sit
+            eius.
           </p>
         </article>
-        <article>
+        <article id="article2">
+          <header>
+            <h2>Article 2</h2>
+          </header>
+          <p>
+            <!-- Una abreviació marcada com a tal -->
+            L' <abbr title="Hipertext Markup Languaje">HTML</abbr> es un
+            llenguatge de marcat.
+          </p>
           <p>
             Dicta, deserunt, distinctio magnam inventore ullam laudantium,
             voluptatem quibusdam ab voluptas unde fugit. Architecto accusamus
@@ -51,6 +91,7 @@
             impedit repellat fugit temporibus tempore! Cumque quam vero aut?
             Ullam, ex! Dignissimos dolores quasi, laboriosam laudantium, aliquam
             delectus ad optio cumque dicta, perferendis voluptatum vitae.
+            <!-- Salt de linea --><br />
             Voluptates ex impedit pariatur asperiores obcaecati voluptas
             perspiciatis facere at, repudiandae consequuntur sed aperiam cumque
             sit! Beatae, suscipit minus, quasi fuga distinctio quos, optio
@@ -62,6 +103,13 @@
             pariatur voluptatum. Repellat quas ex adipisci ab illum ipsum!
           </p>
         </article>
+      </section>
+      <!-- Seccio formulari  -->
+      <section>
+        <form
+          action="http://www.host.cat/xal/ifcd0210/index.php"
+          method="post"
+        ></form>
       </section>
     </main>
     <!-- Continguts relacionats -->
