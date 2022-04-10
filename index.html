@@ -6,18 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Un llistat de paraules clau adreçades als sistemes d'indexacio dels cercadors web -->
-    <meta name="keywords" content="HTML, compendi" />
+    <meta name="keywords" content="Diari, noticies" />
     <!-- Una descripció adreçada als sistemes d'indexació dels cercadors web -->
-    <meta name="description" content="Compendi elements HTML" />
+    <meta name="description" content="Diari noticies tecnologiques" />
     <!-- Un títol -->
-    <title>Compendi HTML</title>
+    <title>CET Diari</title>
   </head>
   <body>
     <!-- Encapçalats (header) -->
     <header>
       <!-- Encapçalat H1,...) -->
-      <h1>Compendi HTML</h1>
+      <h1>CET Diari</h1>
       <nav>
+        <!-- Llista desordenada (conté la navegació) -->
         <ul>
           <li>
             <!-- Un enllaç a una pagina -->
@@ -43,11 +44,15 @@
       <!-- Seccions de document -->
       <!-- Seccio articles -->
       <section>
+        <header>
+          <h2>Articles</h2>
+        </header>
         <!-- Articles -->
         <article>
           <header>
-            <h2>Article 1</h2>
+            <h3>Article 1</h3>
           </header>
+          <!-- Paragraf -->
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Accusantium molestiae atque id amet veniam magnam accusamus ipsum
@@ -76,7 +81,7 @@
         </article>
         <article id="article2">
           <header>
-            <h2>Article 2</h2>
+            <h3>Article 2</h3>
           </header>
           <p>
             <!-- Una abreviació marcada com a tal -->
@@ -106,6 +111,9 @@
       </section>
       <!-- Seccio formulari  -->
       <section>
+        <header>
+          <h2>Formulari d'inscripció</h2>
+        </header>
         <form
           action="http://www.host.cat/xal/ifcd0210/index.php"
           method="post"
@@ -113,7 +121,33 @@
       </section>
     </main>
     <!-- Continguts relacionats -->
-    <aside></aside>
+    <aside>
+      <section>
+        <header>
+          <h2>Redacció</h2>
+        </header>
+        <!-- Capes -->
+        <div>
+          <h3>Oficina Vilafranca</h3>
+          <!-- Llista ordenada -->
+          <ol>
+            <li>Joana</li>
+            <li>Joan</li>
+            <li>Pere</li>
+            <li>Maria</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Oficina Berlin</h3>
+          <ol>
+            <li>Hanna</li>
+            <li>John</li>
+            <li>Peter</li>
+            <li>Mary</li>
+          </ol>
+        </div>
+      </section>
+    </aside>
     <!-- Peu de pàgina -->
     <footer></footer>
   </body>
