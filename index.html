@@ -32,7 +32,7 @@
           </li>
           <li>
             <!-- Un enllaç que descarrega un document en format pdf -->
-            <a href="./instruccions.pdf" download="instruccions"
+            <a href="./multimedia/instruccions.pdf" download="instruccions"
               >Descàrrega instruccions en pdf</a
             >
           </li>
@@ -52,6 +52,11 @@
           <header>
             <h3>Article 1</h3>
           </header>
+          <!-- Video -->
+          <video width="400" controls>
+            <source src="./multimedia/mov_bbb.mp4" type="video/mp4" />
+            El navegador no suporta HTML video.
+          </video>
           <!-- Paragraf -->
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -83,6 +88,11 @@
           <header>
             <h3>Article 2</h3>
           </header>
+          <img
+            src="./multimedia/imatgeHTML.png"
+            alt="Imatge amb l'etiqueta HTML"
+            title="Imatge amb l'etiqueta HTML"
+          />
           <p>
             <!-- Una abreviació marcada com a tal -->
             L' <abbr title="Hipertext Markup Languaje">HTML</abbr> es un
@@ -149,6 +159,21 @@
       </section>
     </aside>
     <!-- Peu de pàgina -->
-    <footer></footer>
+    <footer>
+      <header>
+        <h2>CET Diari</h2>
+      </header>
+      <h3>On Estem ?</h3>
+      <!-- mapa (iframe) indicant on es troben les oficines -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.482646772488!2d1.7007973509802212!3d41.34186197916663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4798ee28317e3%3A0x80149c66fa1200fb!2sCentro%20Ense%C3%B1anzas%20T%C3%A9cnicas%20Pened%C3%A8s%20SL!5e0!3m2!1ses!2ses!4v1649633014621!5m2!1ses!2ses"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </footer>
   </body>
 </html>
