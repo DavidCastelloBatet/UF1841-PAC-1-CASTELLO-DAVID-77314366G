@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <!-- Una definició d'idioma -->
+<!-- Al pasar el validador HTML apareix el seguent WARNING:
+This document appears to be Lorem ipsum text but the html start tag has lang="ca". Consider using lang="zxx" (or variant) instead.
+Quan es substitueixi el Lorem ipsum per text real en català, el WARNING desapareix
+-->
 <html lang="ca">
   <head>
     <meta charset="UTF-8" />
@@ -140,7 +144,7 @@
             <input
               type="text"
               name="nom"
-              id="nom"
+              id="nomSubscriptor"
               placeholder="Introdueix el nom..."
               size="50"
               required
@@ -161,7 +165,7 @@
             <!-- desplegable 3 elements -->
             <label for="tempsSubscripcio">Escull el temps de subscripció:</label
             ><br />
-            <select name="subscripcio" id="subscripcio">
+            <select name="subscripcio" id="tempsSubscripcio">
               <option value="1 mes">1 mes</option>
               <option value="3 mesos">3 mesos</option>
               <option value="6 mesos">6 mesos</option>
@@ -173,6 +177,7 @@
               type="radio"
               name="format"
               value="paper"
+              id="formatDiari"
               checked
             />Paper<br />
             <input type="radio" name="format" value="digital" />Digital<br />
@@ -184,8 +189,8 @@
             <input type="checkbox" id="edicioMati" name="edicioMati" checked />
             <label for="edicioTarda">Edicio Tarda</label>
             <input type="checkbox" id="edicioTarda" name="edicioTarda" />
-            <label for="">Edicio Mati</label>
-            <input type="checkbox" name="Edicio Nit" /><br />
+            <label for="edicioNit">Edicio Nit</label>
+            <input type="checkbox" id="edicioNit" name="Edicio Nit" /><br />
             <!-- camp ocult -->
             <input
               type="hidden"
@@ -231,9 +236,6 @@
 
     <!-- Peu de pàgina -->
     <footer>
-      <header>
-        <h2>CET Diari</h2>
-      </header>
       <h3>On Estem ?</h3>
       <!-- mapa (iframe) indicant on es troben les oficines -->
       <!-- div per modificar estils -->
