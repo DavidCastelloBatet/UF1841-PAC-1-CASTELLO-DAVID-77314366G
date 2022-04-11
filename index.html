@@ -122,8 +122,79 @@
       <!-- Seccio formulari  -->
       <section>
         <header>
-          <h2>Formulari d'inscripció</h2>
+          <h2>Formulari de Subscripcio</h2>
         </header>
+        <!-- Formulari -->
+        <!-- Enviar POST i a l'adreça http://www.host.cat/xal/ifcd0210/index.php-->
+        <form
+          name="formulariSubscripcio"
+          id="formulariSubscripcio"
+          action="http://www.host.cat/xal/ifcd0210/index.php"
+          method="post"
+        >
+          <fieldset>
+            <legend>Dades del Subscriptor</legend>
+            <!-- camp Text -->
+            <label for="nomSubscriptor">Nom del Subscriptor:</label><br />
+            <input
+              type="text"
+              name="nom"
+              id="nom"
+              placeholder="Introdueix el nom..."
+              size="50"
+            /><br />
+            <!-- camp Data -->
+            <label for="dataSubscripcio"
+              >Introdueix la data de Subscripció:</label
+            ><br />
+            <input
+              type="date"
+              name="dataSubscripcio"
+              id="dataSubscripcio"
+            /><br />
+          </fieldset>
+          <fieldset>
+            <legend>Dades de la Subscripció</legend>
+            <!-- desplegable 3 elements -->
+            <label for="tempsSubscripcio">Escull el temps de subscripció:</label
+            ><br />
+            <select name="subscripcio" id="subscripcio">
+              <option value="1 mes">1 mes</option>
+              <option value="3 mesos">3 mesos</option>
+              <option value="6 mesos">6 mesos</option>
+              <option value="1 any">1 any</option></select
+            ><br />
+            <!-- Llistat de seleccio multiple, amb element seleccionat per defecte -->
+            <label for="formatDiari">En quin format el voldras ?</label><br />
+            <input
+              type="radio"
+              name="format"
+              value="paper"
+              checked
+            />Paper<br />
+            <input type="radio" name="format" value="digital" />Digital<br />
+            <input type="radio" name="format" value="mail" />Mail<br />
+            <!-- Casella -->
+            <br />
+            <p>Quina edicio voldras ?</p>
+            <label for="edicioMati">Edicio Mati</label>
+            <input type="checkbox" id="edicioMati" name="edicioMati" checked />
+            <label for="edicioTarda">Edicio Tarda</label>
+            <input type="checkbox" id="edicioTarda" name="edicioTarda" />
+            <label for="">Edicio Mati</label>
+            <input type="checkbox" name="Edicio Nit" /><br />
+            <!-- camp ocult -->
+            <input
+              type="hidden"
+              id="subsPrimavera"
+              name="subsPrimavera"
+              value="campanyaSubscripcioPrimavera"
+            />
+          </fieldset>
+
+          <!-- Boto d'enviament -->
+          <input type="submit" value="Enviar" />
+        </form>
       </section>
     </main>
     <!-- Continguts relacionats -->
